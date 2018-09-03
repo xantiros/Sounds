@@ -95,14 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\d1.wav" />
-    <Content Include="Resources\d2.wav" />
-    <Content Include="Resources\d3.wav" />
-    <Content Include="Resources\d4.wav" />
-    <Content Include="Resources\d5.wav" />
     <Content Include="Resources\dzwiek.wav" />
-    <Content Include="Resources\koniec.wav" />
-    <Content Include="Resources\start.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
