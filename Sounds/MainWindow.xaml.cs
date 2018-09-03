@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Media;
+using System.Reflection;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Sounds
 {
@@ -22,7 +14,23 @@ namespace Sounds
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();           
+        }
+
+        string path = Path.Combine(@"C: \Users\bklima\source\repos\Sounds\Sounds", "Resources", "dzwiek.wav");
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {           
+            SoundPlayer sound = new SoundPlayer(path);
+            sound.Load();
+            sound.Play();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SoundPlayer sound = new SoundPlayer(path);
+            sound.Load();
+            sound.Play();
         }
     }
 }
